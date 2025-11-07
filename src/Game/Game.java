@@ -41,7 +41,7 @@ public class Game {
       clearConsole();
       System.out.println(carte.draw());
       showPlayerInfo();
-      System.out.println(message);
+      System.out.println(GameConfig.ANSI_RED + message + GameConfig.ANSI_RESET);
       playerNextAction();
 
       System.out.println("Game Over!");
@@ -115,7 +115,7 @@ public class Game {
     System.out.println(playerCommandes);
   }
 
-  public void askPlayerAction() {
+  private void askPlayerAction() {
     showUserCommandes();
     String inputAction = sn.nextLine();
     message = "";

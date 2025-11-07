@@ -6,4 +6,8 @@ import Utils.Position;
   public Sorcier(String name, Position position) {
     super(name, 120, position);
   }
+  @Override
+  public String getName() {
+      return super.getName() + "Sorcier";
+  }
 }
